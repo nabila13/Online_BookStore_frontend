@@ -48,8 +48,9 @@ const PlaceOrder = () => {
       headers: { token },
     });
     if (response.data.success) {
-      const { session_url } = response.data;
-      window.location.replace(session_url);
+      // const { session_url } = response.data;
+      // window.location.replace(session_url);
+      navigate("/verify");
     } else {
       alert("Error");
     }
