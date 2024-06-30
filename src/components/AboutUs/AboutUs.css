@@ -1,0 +1,76 @@
+.h1 {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.about-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 2rem;
+  justify-content: space-between;
+}
+.left-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.left-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about-right {
+  background: url(../../assets/about5.jpg) no-repeat;
+  background-size: cover;
+  background-clip: content-box;
+  height: 420px;
+}
+.left-up img,
+.left-down img,
+.right-up img,
+.right-down img {
+  margin: 0.5rem;
+  width: max(4vw, 16rem);
+  height: max(3vh, 12rem);
+}
+.about-right .p1 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 3rem;
+  color: white;
+}
+.about-right .p2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 3rem;
+  color: white;
+}
+
+@media (max-width: 1050px) {
+  .container {
+    max-width: 45%;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    max-width: 30%;
+  }
+}
+@media (max-width: 750px) {
+  .container {
+    display: none;
+  }
+  .h1 {
+    display: none;
+  }
+}
